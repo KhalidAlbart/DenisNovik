@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Girloy-Bold";
+    src: url(../font/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Girloy-Medium";
+    src: url(../font/Gilroy-Medium.ttf);
+}
+
+$size: 100vmax * 2;
+
+$primary_color: #000;
+$second_color: #828282;
+
+$primary_font: "Girloy-Medium";
+$second_font: "Girloy-Bold";
+
+$text_transition: 0.2s all ease-in;
+$icon_transition: 0.4s all ease-in-out;
+$element_transition: 0.8s all ease-in-out;
+
+@keyframes toBig {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: $size;
+        height: $size;
+    }
+}
+
+@keyframes toSmall {
+    from {
+        width: $size;
+        height: $size;
+    }
+
+    to {
+        width: 0;
+        height: 0;
+    }
+}
+
+@mixin grade-icon-propeties {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    max-width: 2.6rem;
+    max-height: 2.6rem;
+    background-repeat: no-repeat;
+}
